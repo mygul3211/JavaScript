@@ -1,0 +1,79 @@
+html {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+    box-shadow: 0 0 5rem magenta;
+    padding: 1rem;
+    background-color: white;
+    border-radius: 5px;
+}
+
+.count-text {
+    text-align: center;
+    font-size: 5rem;
+}
+
+
+.count-action {
+    display: flex;
+    gap: 1rem;
+    border-radius: 10px;
+    margin: 0 auto;
+}
+
+.count-action>input {
+    font-size: 2rem;
+    padding: .5rem 1rem;
+}
+
+.count-action>input:first-child {
+    background-color: aquamarine;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.count-action>input:first-child:hover {
+    background-color: aqua;
+}
+
+.count-action>input:last-child {
+    background-color: magenta;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.count-action>input:nth-child(2) {
+    background-color: grey;
+    border: none;
+    border-radius: 4px;
+}
+
+.count-action>input:nth-child(2):hover {
+    cursor: pointer;
+    background-color: lightgrey;
+}
+
+.count-action>input:last-child:hover {
+    background-color: blueviolet;
+}

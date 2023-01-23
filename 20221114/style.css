@@ -1,0 +1,112 @@
+body {
+    margin: 0;
+}
+
+nav {
+    position: fixed;
+    width: 100%;
+
+    display: flex;
+
+    justify-content: center;
+    gap: 3rem;
+
+    border-bottom: 1px solid grey;
+    box-shadow: 0px 1px 8px grey;
+}
+
+nav>a {
+    text-decoration: none;
+    color: darkblue;
+    padding: 1.5rem 0px;
+    font-weight: bold;
+}
+
+nav>a:hover {
+    cursor: pointer;
+    color: white;
+}
+
+header {
+    height: 500px;
+    position: relative;
+    z-index: -1;
+}
+
+header>img {
+    height: inherit;
+    width: 100%;
+    object-fit: cover;
+}
+
+header>div.greet-msg {
+    position: absolute;
+    top: 44%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+
+    font-size: 3rem;
+    background-color: rgba(255, 255, 255, 0.75);
+    padding: 1rem;
+    border-radius: 10px;
+}
+
+.section>h2 {
+    text-decoration: underline double darkcyan;
+    text-indent: 20px;
+}
+
+.section-content {
+    display: flex;
+}
+
+.section-content>.image {
+    flex: 1;
+
+    display: flex;
+    justify-content: center;
+}
+
+.section-content>.image-content {
+    flex: 1;
+    
+    flex-direction: column;
+    justify-content: center;
+
+    word-wrap: .25rem;
+}
+
+.bluee {
+    background-color: rgba(0, 188, 234, 0.75);
+}
+
+.white {
+    color: white;
+}
+
+.white-background {
+    background-color: white;
+}
+
+.section-content>.image>img {
+    width: 45%;
+}
+
+.see-more {
+    display: inline-block;
+    background-color: white;
+    text-decoration: none;
+    padding: .5rem 1rem;
+    border-radius: .5rem;
+    margin-top: .5rem;
+    margin-left: .5rem;
+    color: blue;
+    border-color: white;
+    border: 1px solid;
+}
+
+.see-more:hover {
+    background-color: rgba(0, 188, 234, 0.75);
+    color: white;
+    background-color: white;
+}
